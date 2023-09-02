@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Tax Home";
+}
+<script src="~/js/site.js"></script>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div class="container d-flex justify-content-center">
+    <div >
+        <label for="InputCountry">Negara </label>
+            <div class="input-group">
+                <input type="text" id="InputCountry" onkeyup="suggestCountries()">
+                <ul id="suggestionsCountry"></ul>
+            </div>
+            <label for="InputHarbor">Pelabuhan </label>    
+            <div class="input-group">
+                <input type="text" id="InputHarbor" onkeyup="suggestHarbor()">
+                <ul id="suggestionsHarbor"></ul>
+            </div>
+            <label for="inputGoodsCode">Barang </label>    
+            <div class="input-group">
+                <input type="text" id="inputGoodsCode" onkeyup="suggestGoods()">
+            </div>
+        <div class="input-group mt-2">
+            <p id="goodsData"></p>
+        </div>
+             <label for="inputPrice">Harga </label>    
+            <div class="input-group">
+                <input type="number" id="inputPrice" onkeyup="suggestCountries()">
+            </div>
+        <div class="input-group mt-2">
+            <p id="persentaseTax"></p>
+        </div>
+        <div class="input-group mt-2">
+            <p id="totalPrice"></p>
+        </div>
+    </div>
+    
+</div>
